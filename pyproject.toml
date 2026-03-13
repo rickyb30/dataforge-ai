@@ -1,0 +1,66 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "dataforge-ai"
+version = "0.1.0"
+description = "Governed data operations through natural language — LLM as compiler, not executor."
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.10"
+authors = [
+    { name = "Ricky Brar" },
+]
+keywords = ["llm", "dataframe", "data-engineering", "ai", "pandas", "sql", "governance"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+dependencies = [
+    "pandas>=2.0",
+    "numpy>=1.24",
+]
+
+[project.optional-dependencies]
+bedrock = ["boto3>=1.28"]
+openai = [
+    "openai>=1.0",
+    "requests>=2.28",
+    "azure-identity>=1.12",
+    "azure-keyvault-secrets>=4.6",
+]
+sql = ["psycopg2-binary>=2.9"]
+snowflake = ["snowflake-connector-python>=3.0"]
+parquet = ["pyarrow>=12.0"]
+anthropic = ["anthropic>=0.30"]
+all = [
+    "boto3>=1.28",
+    "openai>=1.0",
+    "anthropic>=0.30",
+    "requests>=2.28",
+    "azure-identity>=1.12",
+    "azure-keyvault-secrets>=4.6",
+    "psycopg2-binary>=2.9",
+    "snowflake-connector-python>=3.0",
+    "pyarrow>=12.0",
+]
+dev = [
+    "pytest>=7.0",
+    "ruff>=0.4",
+]
+
+[project.urls]
+Homepage = "https://github.com/rickyb30/dataforge-ai"
+Repository = "https://github.com/rickyb30/dataforge-ai"
+Issues = "https://github.com/rickyb30/dataforge-ai/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/dataforge"]

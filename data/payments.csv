@@ -1,0 +1,13 @@
+id,customer_id,amount,currency,payment_date,status
+1,101,250.00,USD,2025-01-15,completed
+2,102,1500.75,CAD,2025-01-16,completed
+3,103,-50.00,USD,2025-01-17,refund
+4,104,320.00,EUR,2025-01-18,completed
+5,105,99.99,GBP,2025-01-19,completed
+6,101,450.00,USD,2025-01-20,completed
+7,,175.50,CAD,2025-01-21,pending
+8,108,0.00,USD,2025-01-22,completed
+9,109,1200.00,CAD,2025-01-23,completed
+10,110,89.99,USD,2025-01-24,completed
+11,101,300.00,USD,2025-01-25,completed
+12,112,675.00,JPY,2025-01-26,completed

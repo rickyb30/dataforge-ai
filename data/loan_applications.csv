@@ -1,0 +1,11 @@
+id,applicant_name,age,annual_income,total_debt,credit_score,loan_amount,loan_purpose
+1,Alice Chen,28,85000,22000,720,15000,auto
+2,Bob Martinez,45,120000,55000,680,30000,home_improvement
+3,Carol Davis,33,62000,18000,750,10000,debt_consolidation
+4,Dan Wilson,52,95000,0,800,20000,home_improvement
+5,Eve Johnson,22,38000,12000,640,8000,education
+6,Frank Lee,41,150000,45000,710,50000,business
+7,Grace Kim,36,78000,25000,690,12000,auto
+8,Hank Brown,29,0,5000,580,5000,personal
+9,Irene Patel,47,110000,60000,660,25000,debt_consolidation
+10,Jack Taylor,55,200000,30000,790,100000,business
