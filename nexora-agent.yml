@@ -1,0 +1,7 @@
+name: Portfolio Insights Assistant
+purpose: Summarize portfolio performance and answer advisor questions
+owner: ricky@cloudprodigy.ca
+platform: github
+tools:
+  - fetch_holdings
+  - generate_report
